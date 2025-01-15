@@ -54,7 +54,4 @@ A modern web application designed to help users track their income, expenses, an
    ```bash
    git clone https://github.com/your-username/budget-tracker.git
 
-### How to Use:
-1. Copy and paste this code into a file named `README.md`.
-2. Replace `https://github.com/your-username/budget-tracker.git` and `[Your Name](https://github.com/your-username)` with your GitHub repository and username.
-3. Add a screenshot named `screenshot.png` in the root directory of your project for the image to display in the README.
+
