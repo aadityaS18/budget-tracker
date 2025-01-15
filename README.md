@@ -2,7 +2,7 @@
 
 A modern web application designed to help users track their income, expenses, and balance. It offers an intuitive interface with features like transaction history, savings goals, expense breakdown charts, and a responsive design that works across devices. The application supports both dark and light themes for user convenience.
 
-![Budget Tracker Screenshot](screenshot.png)
+![Budget Tracker Screenshot](budgettracker.png)
 
 ---
 
