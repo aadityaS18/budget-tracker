@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Budget Tracker</h1>
+      <p>Track Your Finances, Secure Your Future</p>
+    </header>
+
+    <div class="currency-selector">
+      <label for="currency">Preferred Currency:</label>
+      <select id="currency">
+        <option value="USD" selected>USD ($)</option>
+        <option value="INR">INR (₹)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="GBP">GBP (£)</option>
+      </select>
+    </div>
+
+    <div class="summary">
+      <div class="card income">
+        <h3>Income</h3>
+        <p id="income-amount">$0.00</p>
+      </div>
+      <div class="card expenses">
+        <h3>Expenses</h3>
+        <p id="expense-amount">$0.00</p>
+      </div>
+      <div class="card balance">
+        <h3>Balance</h3>
+        <p id="balance-amount">$0.00</p>
+      </div>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <select id="category">
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <div class="transactions">
+      <h3>Transaction History</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+
+    <div class="currency-converter">
+      <label for="convert-to">Convert Expenses To:</label>
+      <select id="convert-to">
+        <option value="USD">USD ($)</option>
+        <option value="INR">INR (₹)</option>
+        <option value="EUR">EUR (€)</option>
+        <option value="GBP">GBP (£)</option>
+      </select>
+      <button id="convert-btn">Convert</button>
+    </div>
+
+    <div class="charts">
+      <h3>Expense Breakdown</h3>
+      <canvas id="expense-chart"></canvas>
+      <h3>Monthly Trends</h3>
+      <canvas id="trend-chart"></canvas>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Budget Tracker. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.currency-selector,
+.currency-converter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.currency-selector select,
+.currency-converter select,
+.currency-converter button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-left: 10px;
+  background: #f9f9f9;
+}
+
+.currency-selector select:hover,
+.currency-converter select:hover,
+.currency-converter button:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 0 10px;
+  text-align: center;
+  background: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.income {
+  background: linear-gradient(135deg, #b8e994, #78e08f);
+  color: #155724;
+}
+
+.expenses {
+  background: linear-gradient(135deg, #f8d7da, #f6b0b5);
+  color: #721c24;
+}
+
+.balance {
+  background: linear-gradient(135deg, #fff3cd, #ffe9a1);
+  color: #856404;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+form input,
+form select,
+form button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+form input:hover,
+form select:hover,
+form button:hover {
+  background: #f1f1f1;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.transactions ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.transactions li {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: rgba(0, 200, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.transactions li:hover {
+  background-color: rgba(0, 200, 0, 0.2);
+  transform: translateX(5px);
+}
+
+.transactions li.income {
+  color: green;
+}
+
+.transactions li.expense {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Chart Section */
+.charts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+canvas {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 10px;
+}
